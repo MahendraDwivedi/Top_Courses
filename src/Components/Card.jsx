@@ -33,14 +33,14 @@ const Card = (props) => {
         <div className='bg-bgDark bg-opacity-80 w-[300px] rounded-md overflow-hidden'>
 
             <div className='relative '>
-                <a href="https://github.com/MahendraDwivedi/Top_Courses"><img src={course.image.url} ></img></a>
+                <img src={course.image.url} ></img>
 
                 <div className='rounded-full w-[40px] h-[40px] bg-white absolute right-2 bottom-[-12px] grid place-items-center'>
                 <button onClick={clickhandler} >
                     {
                         likedCourses.includes(course.id) ? 
                         (<FcLike fontSize="1.75rem"></FcLike> ) :
-                        (<FcLikePlaceholder fontsize="1.75rem" /> ) 
+                        (<FcLikePlaceholder fontSize="1.75rem" /> ) 
                     }
                 </button>    
             </div>
