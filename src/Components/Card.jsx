@@ -33,7 +33,7 @@ const Card = (props) => {
         <div className='bg-bgDark bg-opacity-80 w-[300px] rounded-md overflow-hidden'>
 
             <div className='relative '>
-                <img src={course.image.url} ></img>
+                <a href="https://www.geeksforgeeks.org/web-development/"><img src={course.image.url} ></img></a>
 
                 <div className='rounded-full w-[40px] h-[40px] bg-white absolute right-2 bottom-[-12px] grid place-items-center'>
                 <button onClick={clickhandler} >

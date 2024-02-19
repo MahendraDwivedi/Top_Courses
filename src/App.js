@@ -31,7 +31,7 @@ useEffect(() => {
 },[])
 
   return (
-    <div className="min-h-screen flex-col flex bg-bgDark2">
+    <div className="min-h-screen flex-col flex bg-gradient-to-bl from-gray-800 to-blue-500 ...">
 
       <div className="bg-bgDark2" >
         <Navbar/>
@@ -45,7 +45,7 @@ useEffect(() => {
         />
       </div>
 
-      <div className="w-11/12 max-w-[1200px] min-h-[50vh] mx-auto flex flex-wrap justify-center items-center bg-bgDark2">
+      <div className="w-11/12 max-w-[1200px] min-h-[50vh] mx-auto flex flex-wrap justify-center items-center">
         {
           loading ? (<Spinner/>) : (<Cards courses={courses} category={category} />)
         }
